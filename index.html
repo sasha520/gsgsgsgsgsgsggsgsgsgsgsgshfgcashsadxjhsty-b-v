@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Новорічна відкритка</title>
+  <style>
+    .hidden {
+      display: none;
+    }
+    .santa {
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Зі Святами!</h1>
+  <button onclick="showSanta()">Показати Святого Миколая</button>
+  <img src="santa.png" alt="Святий Миколай" id="santa" class="hidden santa">
+
+  <script>
+    function showSanta() {
+      const santa = document.getElementById("santa");
+      santa.classList.toggle("hidden");
+    }
+  </script>
+</body>
+</html>
